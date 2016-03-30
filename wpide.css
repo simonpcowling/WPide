@@ -24,7 +24,7 @@
 	#template div{margin-right:0 !important;}
 	
 	#wpide_toolbar{
-		width: 75%;
+		width: 73%;
 		min-height: 30px;
 		text-align: right;
 		padding-top: 5px;
@@ -125,7 +125,7 @@
 	 #wpide_toolbar_buttons {
 	 	position:relative;
 	 	min-height:30px;
-		width:75%;
+		width:73%;
 		float:left;
         clear:left;
 		text-align:left;
@@ -171,7 +171,7 @@
 	#wpide_save_container{
         float: left;
         clear: left;
-        width: 74%;
+        width: 72%;
         padding: 0.5%;
         background-color: #E9E9E9;
         
@@ -186,7 +186,7 @@
 		position: relative;
 		min-height: 30px;
 		width: 100%;
-		margin-top: 35px;
+		margin-top: 5px;
 		padding-right:2px;
 		float: right;
 		clear: right;
@@ -237,14 +237,13 @@
 	}
     
     .inner-sidebar{
-        background-image: url(images/wpide_logo.jpg);
         background-repeat: no-repeat;
         background-position: top right;
     }
     
     #fancyeditordiv{
-        width:75%;
-        height:1000px;
+        width:73%;
+        height:calc(100% - 100px)!important;
         margin-right:0!important;
         float:left;
 		min-height: 230px;
@@ -447,7 +446,12 @@
     }
     
     div#side-info-column{
-           width:23%;
+            background-image: url(images/wpide_logo.jpg);
+            background-position:bottom right;
+            width:23%;
+            position:relative;
+            z-index:10;
+            padding-bottom:25px;
     }
     #submitdiv.postbox{
             min-width:220px;
@@ -700,4 +704,10 @@ ul.jqueryFileTree a {
 }
 #wpide_file_browser .wpide-context-menu li:hover {
 	background-color: #DFDFDF;
+}
+#post-body {
+    position:fixed;
+    top:12px;
+    left:50px;
+    height:calc(100% - 30px);
 }
