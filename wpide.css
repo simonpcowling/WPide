@@ -24,7 +24,7 @@
 	#template div{margin-right:0 !important;}
 	
 	#wpide_toolbar{
-		width: 73%;
+		width: 100%;
 		min-height: 30px;
 		text-align: right;
 		padding-top: 5px;
@@ -125,7 +125,7 @@
 	 #wpide_toolbar_buttons {
 	 	position:relative;
 	 	min-height:30px;
-		width:73%;
+		width:100%;
 		float:left;
         clear:left;
 		text-align:left;
@@ -171,7 +171,7 @@
 	#wpide_save_container{
         float: left;
         clear: left;
-        width: 72%;
+        width: 99%;
         padding: 0.5%;
         background-color: #E9E9E9;
         
@@ -242,7 +242,7 @@
     }
     
     #fancyeditordiv{
-        width:73%;
+        width:100%;
         height:calc(100% - 100px)!important;
         margin-right:0!important;
         float:left;
@@ -708,6 +708,12 @@ ul.jqueryFileTree a {
 #post-body {
     position:fixed;
     top:12px;
-    left:50px;
+    left:175px;
     height:calc(100% - 30px);
+    width:calc(100% - 460px)!important;
+}
+
+body.folded #post-body {
+    left:50px;
+    width:calc(100% - 370px)!important;
 }
