@@ -25,7 +25,6 @@
 	
 	#wpide_toolbar{
 		width: 100%;
-		min-height: 30px;
 		text-align: right;
 		padding-top: 5px;
 		position: relative;
@@ -448,7 +447,7 @@
     div#side-info-column{
             background-image: url(images/wpide_logo.jpg);
             background-position:bottom right;
-            width:23%;
+            width:300px;
             position:relative;
             z-index:10;
             padding-bottom:25px;
@@ -707,13 +706,19 @@ ul.jqueryFileTree a {
 }
 #post-body {
     position:fixed;
-    top:12px;
+    top:42px!important;
     left:175px;
     height:calc(100% - 30px);
-    width:calc(100% - 460px)!important;
+    width:calc(100% - 490px)!important;
 }
 
-body.folded #post-body {
+body.folded.sticky-menu #post-body {
     left:50px;
+    top:42px!important;
     width:calc(100% - 370px)!important;
+}
+body.folded #post-body {
+    left:10px;
+    top:55px!important;
+    width:calc(100% - 320px)!important;
 }
