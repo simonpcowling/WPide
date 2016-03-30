@@ -1597,7 +1597,6 @@ jQuery(document).ready(function($) {
 
 			// Do not allow if less than 230px
 			if (new_height > 230 || new_height > curr_height) {
-				$("#fancyeditordiv").height(++new_height);
 				editor.resize();
 			}
 		}
